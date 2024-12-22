@@ -10,6 +10,10 @@ app.get('/test', (req, res)=>{
     res.status(200).json({message: 'test'});
 })
 
+app.get('/test-2', (req,res)=>{
+    res.status(200).json({message: 'abcd'});
+})
+
 const PORT = 5000;
 
 app.listen(PORT, ()=> console.log(`Port listen ${PORT}`));
