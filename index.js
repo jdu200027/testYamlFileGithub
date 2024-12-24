@@ -16,7 +16,12 @@ app.get('/test-2', (req,res)=>{
 
 app.get('/test-3', (req, res)=>{
     res.send("Hello World! test-3");
-})
+});
+app.get('/test-4', (req, res)=>{
+    res.status(200).json({
+        message: "Finnaly test checking"
+    });
+});
 
 const PORT = 5000;
 
